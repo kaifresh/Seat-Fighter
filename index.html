@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>SEAT FIGHTER 2015</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+         
+        <div id="loadingScreen">
+            <div id='intro-text'>
+            <p>SEAT FIGHTER</p>
+            
+            <p class="intro-instructions"><b>Move </b> - Left & Right arrows</p>
+            <p class="intro-instructions"><b>Punch</b> - A</p>
+            <p class="intro-instructions"><b>Block</b> - S</p>
+            <p class="intro-instructions"><b>Jump</b> - Space</p>
+            <p id="cur-loading">LOADING...</p>
+            </div>
+        </div>
+        
+        <div id="three-canvas"></div>
+        <div id="health-bar-wrapper">
+            <div id="abbot-health-wrapper">
+                <div id="abbot-hp-remaining" class="health-bar-part remaining">x</div>
+                <div id="abbot-hp-lost" class="health-bar-part lost">x</div>
+                <div id="abbot-name" class="player-name">Abbott</div>
+            </div>
+            <div id="turnbull-health-wrapper">
+                <div id="turnbull-hp-remaining" class="health-bar-part remaining">x</div>
+                <div id="turnbull-hp-lost" class="health-bar-part lost">x</div>
+                <div id="turnbull-name" class="player-name">Turnbull</div>
+            </div>
+        </div>
+        
+        <div id="end-title">
+            <div class="vertical-middle-contents text-center">
+            <div id="abbot-wins">ABBOTT REMAINS PRIME MINISTER!!!</div>
+            <div id="turnbull-wins">TURNBULL IS THE NEW PRIME MINISTER OF AUSTRALIA!!!</div>
+            <div id='play-again'> Play Again!</div>
+            </div>
+        </div>
+        
+        
+        
+<!--        <div id="message-board">
+            
+            <p id="comp-nojitter">No jitter: <span></span></p>
+            <p id="comp-critMoves">nMoves: <span></span></p>
+            <p id="comp-probability">Probability moving Left: <span id="comp-probability-left"></span> &
+                Right: <span id="comp-probability-right"></span></p>
+            <p id="comp-approachStatus">Approach Status: <span></span></p>
+            
+        </div>-->
+        
+        <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>-->
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.js"><\/script>')</script>
+
+        <script src="js/utils.js" type="text/javascript"></script>
+        
+        <script src="js/vendor/three.js/three.js" type="text/javascript"></script>
+        <script src="js/vendor/three.js/Detector.js" type="text/javascript"></script>
+        <script src="js/vendor/three.js/TextureAnimator.js" type="text/javascript"></script>
+            
+        <script src="js/fighter.js" type="text/javascript"></script>
+        
+        <script src="js/nGram.js" type="text/javascript"></script>
+        <script src="js/AI.js" type="text/javascript"></script>
+       
+        <script src="js/main.js"></script>
+        <script src="js/userControls.js" type="text/javascript"></script> <!--has to come after main because it looks at shit defined there-->
+
+        <!--         Google Analytics: change UA-XXXXX-X to be your site's ID. 
+                <script>
+                    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>-->
+    </body>
+</html>
