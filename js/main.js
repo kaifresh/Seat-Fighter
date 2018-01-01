@@ -40,11 +40,11 @@ canvas.append(renderer.domElement);
 
 /*Create scene/stage*/
 var scene = new THREE.Scene();
-
+var feature_branch_demo = new THREE.Scene();
 var clock = new THREE.Clock();
 var delta = clock.getDelta();
 
-/**********************************CAMERA*************************************/
+/*******************FEATURE BRANCH EXTRA!***************CAMERA*************************************/
 /*Create camera (orthographic means you dont have perspective or a 3rd dimension)*/
 //var camera = new THREE.OrthographicCamera( w / - 10, w / 10, h / 10, h / - 10, 1, 1000); //Frustrum lol
 var cameraZ = 5;
